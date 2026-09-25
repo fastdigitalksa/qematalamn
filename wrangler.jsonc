@@ -1,0 +1,15 @@
+{
+  // REQUIRED — must exactly match the existing Worker's name.
+  // Find it in: Cloudflare dashboard -> Workers & Pages -> bold-hall-83be -> Settings -> General -> "Worker name".
+  // If this is wrong, `wrangler deploy` creates a NEW separate Worker instead of updating the live one.
+  "name": "bold-hall-83be",
+
+  // REQUIRED — copy the exact date shown in:
+  // Workers & Pages -> bold-hall-83be -> Settings -> Runtime -> "Compatibility date".
+  // Do not guess this value; a different date can silently change runtime behavior.
+  "compatibility_date": "2026-08-16",
+
+  "assets": {
+    "directory": "./"
+  }
+}
